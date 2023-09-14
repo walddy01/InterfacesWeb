@@ -11,3 +11,15 @@ th {
 img {
     width: 100px;
 }
+
+a:hover {
+    color: yellow;
+}
+
+#orni:hover {
+    color: green;
+}
+
+a {
+    color: blue;
+}
