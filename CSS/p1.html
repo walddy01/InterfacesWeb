@@ -9,19 +9,50 @@
         div {
             border: 5px solid black;
             padding: 10px;
-            margin: 10px;
-            width: 300px;
+            /* outline: 5px solid green; */
+            /* outline-offset: 0px; */
         }
 
-        .border-box {
-            box-sizing: border-box;
+        div.uno {
+            margin-bottom: 10px;
+        }
+
+        div.dos {
+            margin-top: 0px;
+        }
+
+        div.tres {
+            display: inline-block;
+            width: 200px;
+            margin-right: 10px;
+            /* margin-inline: 0px 0px; */
+        }
+
+        div.cuatro {
+            display: inline;
+            width: 200px;
+            margin-left: 0px;
+            /* margin-inline: 0px 0px; */
         }
     </style>
 </head>
 
 <body>
-    <div>Hola Mundo</div>
-    <div class="border-box">Adiós Mundo</div>
+    <div class="uno">Hola Mundo</div>
+    <div class="dos">Adiós Mundo</div>
+
+    <p><strong>Explicación:</strong></p>
+    <p>Observa que al segundo div podemos darle un <code>margin-top</code> de hasta 10px sin que eso suponga ninguna
+        diferencia en el margen con el primer div.</p>
+    <p>Esto ocurre porque el margen del primer div está establecido ya en 10px.</p>
+
+    <hr>
+
+    <p>Sin embargo, esto no ocurre con los márgenes izquierdo y derecho. Prueba modificando el margen izquierdo del
+        div.cuatro:</p>
+
+    <div class="tres">Hola Mundo</div>
+    <div class="cuatro">Adiós Mundo</div>
 </body>
 
 </html>
