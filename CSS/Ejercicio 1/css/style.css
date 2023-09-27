@@ -1,0 +1,40 @@
+#morado {
+    position: relative;
+    width: 450px;
+    height: 40px;
+    top: 25px;
+    left: 150px;
+    background-color: blueviolet;
+}
+
+#rosa {
+   position: sticky;
+   height: 335px;
+   background-color: pink;
+   top: 20px;
+}
+
+#celeste {
+    position: fixed;
+    width: 40px;
+    height: 90px;
+    bottom: 100px;
+    right: 250px;
+    background-color: skyblue;
+}
+
+#verde {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 145px;
+    background-color: green;
+}
+
+#amarillo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 100px;
+}
