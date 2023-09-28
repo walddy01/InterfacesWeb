@@ -1,0 +1,23 @@
+#div1 {
+    width: 150px;
+    height: 150px;
+    float: right;
+    background-color: pink;
+    text-align: center;
+}
+
+#div2 {
+    width: 150px;
+    height: 150px;
+    float: left;
+    background-color: skyblue;
+    text-align: center;
+}
+
+#div3 {
+    width: 150px;
+    height: 150px;
+    float: left;
+    background-color: tomato;
+    text-align: center;
+}

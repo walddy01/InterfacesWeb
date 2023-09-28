@@ -18,7 +18,7 @@
     position: fixed;
     width: 40px;
     height: 90px;
-    bottom: 100px;
+    bottom: 70px;
     right: 250px;
     background-color: skyblue;
 }
@@ -27,14 +27,34 @@
     position: absolute;
     height: 10px;
     width: 100%;
-    top: 145px;
+    top: 175px;
     background-color: green;
 }
 
 #amarillo {
-    position: relative;
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    width: 250px;
+    height: 250px;
     background-color: yellow;
-    border-radius: 100px;
+    border-radius: 150px;
+    right: 100px;
+}
+
+#azul {
+    position: absolute;
+    width: 35px;
+    height: 335px;
+    background-color: blue;
+    right: 150px;
+    top: -165px;
+}
+
+#rojo{
+    position: relative;
+    width: 160px;
+    height: 65px;
+    background-color: red;
+    top: 15px;
+    right: 73px;
+    border-radius: 0 15px 0 15px;
 }
