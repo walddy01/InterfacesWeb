@@ -1,42 +1,43 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 p {
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .main {
-    font-size: 0;
+  font-size: 0;
 }
 
 .img {
-    width: 33.33%;
-    display: inline-block;
+  width: 33.33%;
+  display: inline-block;
 }
 
 .footer {
-    width: 100%;
-    background-color: gray;
-    color: black;
-    float: left;
+  width: 100%;
+  background-color: gray;
+  color: black;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .curso {
-    float: left;
-    padding: 20px;
-    font-weight: bold;
-
+  float: left;
+  padding: 20px;
+  font-weight: bold;
 }
 
 .nombre {
-    padding: 20px;
-    float: right;
-    font-weight: bold;
+  padding: 20px;
+  float: right;
+  font-weight: bold;
 }
