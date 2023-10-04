@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;
+}
+
+.div1 {
+    background-color: pink;
+    float: right;
+}
+
+.div2 {
+    background-color: skyblue;
+    float: left;
+}
+
+.div3{
+    background-color: tomato;
+}

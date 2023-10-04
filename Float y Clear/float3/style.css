@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.div1 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    float: right;
+    text-align: center;
+    line-height: 150px;
+}
+
+.divtexto {
+    background-color: tomato;
+}
+
+.div2 {
+    background-color: skyblue;
+    display: inline-block;
+}

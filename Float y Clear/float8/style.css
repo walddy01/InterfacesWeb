@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main {
+    font-size: 0;
+}
+
+.img {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.footer {
+    width: 100%;
+    background-color: gray;
+    color: black;
+    float: left;
+}
+
+.curso {
+    float: left;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+.nombre {
+    padding: 20px;
+    float: right;
+    font-weight: bold;
+}
