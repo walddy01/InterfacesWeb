@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+div {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  text-transform: none;
+  font-weight: normal;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #88abc2;
+}
+
+a:hover {
+  color: #ffbe56;
+}
+
+.example {
+  margin-bottom: 60px;
+}
+
+.example img {
+  max-width: 80%;
+}
+
+div {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container {
+  background: #ebf7f8;
+}
+
+.container.index {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #ff9c56;
+}
+
+.logo {
+  background: #ff4d79;
+  float: right;
+}
+
+.navigation {
+  background: #e85f43;
+  float: left;
+}
+
+.sidebar {
+  background: #ffbe56;
+  height: 300px;
+}
+
+.main-content {
+  background: #88abc2;
+  color: #fff;
+}
+
+.sub-content {
+  background: #49708a;
+  height: 140px;
+}
+
+.sub-content-2 {
+  background: #355163;
+  height: 140px;
+  margin-top: 15px;
+}
+
+.footer {
+  background: #aad637;
+}
+
+.post {
+  background: #aad637;
+  margin-bottom: 20px;
+}
+
+.image {
+  background: #8eb22e;
+}
+
+/*Definicón de columnas*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /* border: 1px solid red; */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
