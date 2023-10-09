@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+    margin-right: -4px;
+}
+.div1 {
+  background-color: skyblue;
+  width: 25%;
+  height: 100px;
+  
+}
+
+.div2 {
+  background-color: azure;
+  width: 25%;
+  height: 100px;
+}
+
+.div3 {
+  background-color: tomato;
+  width: 25%;
+  height: 100px;
+}
+
+.div4 {
+  background-color: cornflowerblue;
+  width: 25%;
+  height: 100px;
+}

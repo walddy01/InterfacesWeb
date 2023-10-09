@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+#div1 {
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  float: right;
+}
+
+#div2 {
+  background-color: skyblue;
+  float: left;
+}
+
+#div3 {
+  background-color: tomato;
+}
+
+p {
+  float: left;
+}
