@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+
+div {
+    display: inline-block;
+    width: 25%;
+    padding: 40px;
+}
+
+.colum1 {
+    background-color: grey;
+}
+
+.colum2 {
+    background-color: rgba(128, 128, 128, 0.719);
+}
+
+.colum3 {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.colum4 {
+    background-color: rgba(128, 128, 128, 0.452);
+}
+
+@media (max-width: 992px){
+    div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    div {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,15 @@
+.header {
+    background-color: dimgray;
+    padding: 15px;
+}
+
+a {
+    padding: 10px;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    a {
+        display: block;
+    }
+}

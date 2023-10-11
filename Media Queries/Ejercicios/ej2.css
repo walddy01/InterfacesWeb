@@ -1,0 +1,9 @@
+.ocultar {
+    background-color: lightblue;
+}
+
+@media (min-width: 600px) {
+    .ocultar {
+        display: none;
+    }
+}
