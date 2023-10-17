@@ -5,7 +5,7 @@ div {
     width: 25%;
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px), (min-width: 1100px) {
     div {
         padding: 15px;
         border: 5px solid lightblue;
