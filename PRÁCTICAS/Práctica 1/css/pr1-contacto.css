@@ -1,0 +1,30 @@
+aside [class*="col-"] {
+  padding: 5px !important;
+}
+
+aside h3 {
+  margin-top: 5px;
+}
+
+aside label {
+  display: block;
+}
+
+aside form {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
+aside #btn-enviar {
+  font-size: 13pt;
+  display: block;
+  margin: 0 auto;
+}
