@@ -2,21 +2,44 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 header {
-    background-color: #333;
+    background-color: black;
     position: sticky;
+    top: 0px;
+}
+
+.img-header {
+    background-image: url('../img/html5-wallpaper.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 200px;
+    
 }
 
 a {
+    display: inline-block;
+    padding: 20px;
     color: white;
     text-decoration: none;
-    margin-top: 10px;
 }
 
 a:hover {
     background-color: red;
+    
 }
 
-.cont {
+.contacto {
     float: right;
 }
