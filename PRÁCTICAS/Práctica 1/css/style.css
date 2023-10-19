@@ -1,45 +1,104 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-header {
-    background-color: black;
-    position: sticky;
-    top: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .img-header {
-    background-image: url('../img/html5-wallpaper.jpg');
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 200px;
-    
+  background-image: url("../img/html5-wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+nav {
+  background-color: black;
+  position: sticky;
+  top: 0px;
 }
 
 a {
-    display: inline-block;
-    padding: 20px;
-    color: white;
-    text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
 }
 
-a:hover {
-    background-color: red;
-    
+.nav-btn:hover {
+  background-color: red;
 }
 
 .contacto {
-    float: right;
+  float: right;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.link-article {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.link-article:hover {
+  color: #555;
+}
+
+[class*="div"] {
+  height: 200px;
+  padding: 15px;
+}
+
+.div1 {
+  background-color: yellowgreen;
+}
+
+.aprobar {
+  background-color: lightblue;
+}
+
+.div2 {
+  background-color: lightcoral;
+}
+
+.div3 {
+  background-color: lightblue;
+}
+
+.div4 {
+  background-color: lightpink;
+}
+
+.div5 {
+  background-color: lightseagreen;
+}
+
+.scroll {
+  background-color: #55555593;
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  padding: 15px;
+}
+
+.a-scroll {
+  padding: 0px;
 }
