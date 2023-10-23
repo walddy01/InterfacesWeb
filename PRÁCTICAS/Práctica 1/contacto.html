@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 1</title>
+    <title>Contacto - Simulacro Práctica</title>
     <link rel="stylesheet" href="css/columnas.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="img-header" id="header"></header>
-    <nav class="row">
-        <a href="index.html" class="nav-btn">Inicio</a>
-        <a href="" class="nav-btn">Productos</a>
-        <a href="" class="nav-btn">Servicios</a>
-        <a href="" class="nav-btn">Precios</a>
-        <a href="contacto.html" class="contacto nav-btn">Contacto</a>
-    </nav>
+    <div id="container">
+        <header class="img-header" id="header"></header>
+        <nav class="row">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="" class="nav-btn">Productos</a>
+            <a href="" class="nav-btn">Servicios</a>
+            <a href="" class="nav-btn">Precios</a>
+            <a href="contacto.html" class="contacto nav-btn">Contacto</a>
+        </nav>
 
-    <div class="row">
-        <div class="col-4 col-s-4">
-            <h2>formulario de contacto</h2>
+        <div class="row">
+            <div class="col-e-4 col-t-4">
+                <h2>formulario de contacto</h2>
+                <form action="/" class="row">
+                    <div class="col-e-5 col-t-5">
+                        <label for="nombre">Nombre:</label>
+                    </div>
+                    <div class="col-e-7 col-t-7">
+                        <input type="text" id="nombre">
+                    </div>
 
-            <form action="" class="row">
-                <div class="col-5 col-s-5">
-                    <label for="">Nombre:</label>
-                </div>
-                <div class="col-7 col-s-7">
-                    <input type="text">
-                </div>
+                    <div class="col-e-5 col-t-5">
+                        <label for="apellidos">Apellidos:</label>
+                    </div>
+                    <div class="col-e-7 col-t-7">
+                        <input type="text" id="apellidos">
+                    </div>
 
-                <div class="col-5 col-s-5">
-                    <label for="">Apellidos:</label>
-                </div>
-                <div class="col-7 col-s-7">
-                    <input type="text">
-                </div>
+                    <div class="col-e-5 col-t-5">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-e-7  col-t-7">
+                        <input type="text" id="email">
+                    </div>
 
-                <div class="col-5 col-s-5">
-                    <label for="">Email:</label>
-                </div>
-                <div class="col-7  col-s-7">
-                    <input type="text">
-                </div>
+                    <div class="col-e-12 col-t-12">
+                        <textarea name="texto" id="texto" cols="30" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
 
-                <div class="col-12 col-s-12">
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
-                </div>
-            </form>
+            <div class="col-e-8 col-t-8">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.25755122999!2d-5.535597323617756!3d39.890865587476895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3fd9caa7520959%3A0x1ede1c1234baf3b9!2sIES%20August%C3%B3briga!5e0!3m2!1ses!2ses!4v1697726031798!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="col-e-12 col-t-12"></iframe>
+            </div>
         </div>
 
-        <div class="col-8 col-s-8">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.25755122999!2d-5.535597323617756!3d39.890865587476895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3fd9caa7520959%3A0x1ede1c1234baf3b9!2sIES%20August%C3%B3briga!5e0!3m2!1ses!2ses!4v1697726031798!5m2!1ses!2ses"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="col-12"></iframe>
+        <div class="scroll">
+            <a href="#header" class="a-scroll"><img src="img/arrow-up.png" alt="Botón de Scroll"></a>
         </div>
     </div>
 </body>
