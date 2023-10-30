@@ -1,0 +1,9 @@
+Ejercicio 1
+
+1. #page > div
+2. #page div
+3. span + strong 
+4. span ~ span
+5. #menu *
+
+Ejercicio 2
