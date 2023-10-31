@@ -7,3 +7,25 @@ Ejercicio 1
 5. #menu *
 
 Ejercicio 2
+
+1. a:link / a:not(:visited)
+2. button:hover
+3. Selecciona a los elementos que sean de type submit mientras el usuario los está pulsando.
+4. Selecciona al elemento que tenga el id #mi-id que este en primer plano.
+5. .mi-clase:visited
+6. input:enabled
+7. label:only-child
+8. Selecciona al elemento tr que sea el hijo en la posición 2.
+9. Selecciona a los elemento h1 que son el ultimo hijo de su tipo.
+10. li:nth-last-child(3)
+11. div.mi-clase:only-of-type
+12. input:checked
+13. Selecciona todos los elementos que tengan el atributo required que estén vacios.
+14. p:nth-of-type(3)
+15. label:only-child
+
+Ejercicio 3
+
+3.1. *:is(.main, #main-section:has(>.header)) 
+
+3.2. 
