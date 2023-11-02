@@ -26,6 +26,20 @@ Ejercicio 2
 
 Ejercicio 3
 
-3.1. *:is(.main, #main-section:has(>.header)) 
+3.1. :is(#main-section > .header, #main-section > .main)
+3.1. #main-section>:is(.header, .main)
 
-3.2. 
+3.2. :is(.highlight, .selected):not(:has(~.active))
+3.2 .active~is(.highlight, .selected)
+
+3.3 div.container:has(.active) > .card
+
+3.4 section:has(a[href$=".pdf" i])
+
+3.5 #main:has([href])
+
+3.6 .card:not(.disabled)
+
+3.7 p.item:not(.active p.item)
+
+3.8 .container > .item:not(li, a)
