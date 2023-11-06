@@ -43,3 +43,15 @@ Ejercicio 3
 3.7 p.item:not(.active p.item)
 
 3.8 .container > .item:not(li, a)
+
+Ejercicio 4
+
+4.1 .container .item:first-child
+
+4.2 .container :last-of-type
+
+4.3 .container :only-child
+
+4.4 .container :nth-child(3)
+
+4.5 input[type=text]
