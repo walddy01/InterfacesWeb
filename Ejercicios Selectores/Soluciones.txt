@@ -46,12 +46,12 @@ Ejercicio 3
 
 Ejercicio 4
 
-4.1 .container .item:first-child
+4.1 .container>.item:first-child
 
 4.2 .container :last-of-type
 
 4.3 .container :only-child
 
-4.4 .container :nth-child(3)
+4.4 .container item:nth-child(3)
 
-4.5 input[type=text]
+4.5 input[type="text"]:focus
