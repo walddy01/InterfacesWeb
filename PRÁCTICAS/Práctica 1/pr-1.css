@@ -1,9 +1,15 @@
 /* ---- Estilos básicos ---------------------------------------------------- */
 
+.sinPadding {
+  /*O quitar el padding en columnas*/
+  padding: 0px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #F2F5FE url("img/fondo.gif") 0 0 repeat-x;
+  background: rgb(242, 245, 254);
+  background: linear-gradient(0deg, rgba(242, 245, 254, 1) 80%, rgba(151, 176, 245, 1) 100%);
   font: 70%/160% "verdana", sans-serif;
   color: #192666;
 }
@@ -13,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #4F6AD7;
+  color: #4f6ad7;
 }
 
 p {
@@ -60,41 +66,75 @@ ol {
 /* ---- Layout ------------------------------------------------------------- */
 
 #contenedor {
-  width: 770px;
+  width: 50%;
   margin: 50px auto 0 auto;
 }
 
-#cabecera {
+#_cabecera {
   width: 770px;
   position: relative;
   height: 100px;
   margin: 0;
   padding: 0;
-  background: #233C9B url("img/cabecera.jpg") no-repeat;
+  background: #233c9b url("img/cabecera.jpg") no-repeat;
   background-size: cover;
-  color: #FFF;
+  color: #fff;
 }
 
-#contenido {
+.cabecera { /* Nuevo */
+  /* width: 770px; */
+  /* position: relative; */
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px 20px 0px 0px;
+  background: #233c9b url("img/cabecera.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#_contenido {
   width: 770px;
-  background: #FFF;
+  background: #fff;
 }
 
-#contenido #principal {
+.contenido { /* Nuevo */
+  width: 100%;
+  background: #fff;
+}
+
+#_contenido #_principal {
   float: left;
   width: 520px;
   margin-top: 15px;
   margin-right: 10px;
   padding: 0 0 0 20px;
-  background: #FFF;
+  background: #fff;
 }
 
-#contenido #secundario {
+.contenido .principal { /* Nuevo */
+  padding: 15px 0 0 20px;
+  padding-right: 10px;
+  background: #fff;
+  
+}
+
+#_contenido #_secundario {
   float: left;
   width: 200px;
   margin: 15px 0 0 0;
   padding: 0;
-  background: #CEDBF9 url("img/fondo_columna.gif") no-repeat;
+  background: #cedbf9 url("img/fondo_columna.gif") no-repeat;
+}
+
+.contenido .secundario { /* Nuevo */
+  margin-top: 15px;
+  padding: 0;
+  background-color: rgb(206, 219, 249);
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: inset 0 0 17px -2px #a0b9f3;
+  -moz-box-shadow: inset 0 0 17px -2px #a0b9f3;
+  box-shadow: inset 0 0 17px -2px #a0b9f3;
 }
 
 #pie {
@@ -102,33 +142,43 @@ ol {
   height: 60px;
   margin-bottom: 50px;
   background: url("img/fondo_pie.jpg") no-repeat;
-  color: #6685CC;
+  color: #6685cc;
   position: relative;
 }
 
 /* ---- Cabecera ----------------------------------------------------------- */
-#cabecera #logo {
+#_cabecera #_logo {
   position: absolute;
   top: 35px;
   left: 35px;
   margin: 0;
 }
 
+.cabecera .logo { /* Nuevo */
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
 #cabecera #logo a {
-  color: #FFF;
+  color: #fff;
   display: block;
   line-height: 35px;
 }
 
 #cabecera #logo a:hover {
-  color: #B5C4E3;
+  color: #b5c4e3;
   text-decoration: underline;
 }
 
-#cabecera #buscador {
+#_cabecera #_buscador {
   position: absolute;
   top: 40px;
   right: 20px;
+}
+
+.cabecera .buscador { /* Nuevo */
+  margin-top: 35px;
+  float: right;
 }
 
 #cabecera #buscador legend {
@@ -140,7 +190,12 @@ ol {
 }
 
 /* ---- Menú --------------------------------------------------------------- */
-#menu {
+#_menu {
+  background: #192666;
+  padding: 10px 0 0 0;
+}
+
+.menu { /* Nuevo */
   background: #192666;
   padding: 10px 0 0 0;
 }
@@ -163,54 +218,52 @@ ol {
   padding: 5px 15px;
   border: 0;
   background: #253575;
-  color: #B5C4E3;
+  color: #b5c4e3;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
 
 #menu ul li a:hover {
-  background: #31479B;
+  background: #31479b;
 }
 
 #menu ul li.seleccionado a {
-  background: #FFF;
-  color: #FF9000;
+  background: #fff;
+  color: #ff9000;
 }
 
 /* ---- Contenidos --------------------------------------------------------- */
 #contenido .articulo {
-  clear: both;
   margin: 0;
   padding: 20px;
   background: url("img/fondo_articulo.jpg") no-repeat;
 }
 
 #contenido .articulo img {
-  width: 490px;
+  width: 100%;
 }
 
 #contenido .articulo h2 {
   margin: 0 -20px;
   padding: 10px;
-  background: #DEE5FD;
+  background: #dee5fd;
   color: #192666;
 }
-
 
 #contenido .info {
   margin: 10px 0;
   padding-bottom: 8px;
-  border-bottom: 1px solid #DEE5FD;
-  color: #6685CC;
+  border-bottom: 1px solid #dee5fd;
+  color: #6685cc;
 }
 
 #contenido .info a {
-  color: #6685CC;
+  color: #6685cc;
 }
 
 #contenido .info a:hover {
-  color: #FF9000;
+  color: #ff9000;
 }
 
 #contenido .info span.fecha,
@@ -242,7 +295,7 @@ ol {
 #contenido #secundario h3 {
   padding: 10px 0 10px 10px;
   margin-top: 20px;
-  background: #A0B9F3;
+  background: #a0b9f3;
   color: #192666;
 }
 
@@ -251,7 +304,8 @@ ol {
   margin: 4px 5px 0 0;
 }
 
-#contenido #secundario #sobremi p {}
+#contenido #secundario #sobremi p {
+}
 
 #contenido #secundario div {
   padding: 0 10px;
@@ -266,7 +320,7 @@ ol {
 #contenido #secundario li {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #E0E8FA;
+  border-bottom: 1px solid #e0e8fa;
 }
 
 #contenido #secundario li a {
@@ -277,12 +331,12 @@ ol {
 }
 
 #contenido #secundario li a:hover {
-  background-color: #E0E8FA;
+  background-color: #e0e8fa;
   color: #192666;
 }
 
 #contenido #secundario li.seleccionado a {
-  background: #E0E8FA url("img/icono_elemento_seleccionado.gif") 8px no-repeat;
+  background: #e0e8fa url("img/icono_elemento_seleccionado.gif") 8px no-repeat;
   font-weight: bold;
 }
 
