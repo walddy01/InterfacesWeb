@@ -1,0 +1,120 @@
+:root {
+    --color: #d3d3d3;
+}
+
+header div {
+    background-color: var(--color);
+    height: 70px;
+}
+
+header p {
+    float: right;
+}
+
+.caja-homer {
+    background-color: #d3ffd3;
+    height: 400px;
+    padding: 15px;
+}
+
+.caja-homer img {
+    float: left;
+    margin-right: 20px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 12px 3px #000000;
+    -moz-box-shadow: 0 0 12px 3px #000000;
+    box-shadow: 0 0 12px 3px #000000;
+}
+
+.rotulo-homer {
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 120px;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #000000;
+    color: white;
+}
+
+
+
+.texto-homer::first-letter {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.caja-formulario {
+    background-color: #eee;
+    height: 400px;
+}
+
+.caja-formulario fieldset {
+    border: 1px solid black;
+    height: 100%;
+    
+}
+
+.caja-formulario input {
+    width: 100%;
+}
+
+.caja-formulario select {
+    width: 100%;
+}
+
+[type="button"] {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.hola {
+    background-color: lightcoral;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+
+.adios {
+    background-color: lightgreen;
+    float: right;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+@media only screen and (min-width: 900px) {
+    .hola {
+        margin-right: 30px;
+        
+    }
+    .adios {
+        margin-left: 30px;
+    }
+}
+
+footer {
+    background-color: var(--color);
+}
+
+footer img {
+    height: 40px;
+    float: right;
+}
