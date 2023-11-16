@@ -117,7 +117,7 @@ ol {
   padding-right: 10px;
   background: #fff;
   
-}
+}.col-s-
 
 #_contenido #_secundario {
   float: left;
@@ -237,7 +237,11 @@ ol {
 #contenido .articulo {
   margin: 0;
   padding: 20px;
-  background: url("img/fondo_articulo.jpg") no-repeat;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: inset 0 0 17px -2px #a0b9f3;
+  -moz-box-shadow: inset 0 0 17px -2px #a0b9f3;
+  box-shadow: inset 0 0 17px -2px #a0b9f3;
+  margin-bottom: 10px;
 }
 
 #contenido .articulo img {
