@@ -269,14 +269,19 @@ ol {
 }
 
 #contenido #secundario #sobremi img {
-  float: left;
   margin: 4px 5px 0 0;
+  width: 100%;
+  padding: 5px;
 }
 
-#contenido #secundario #sobremi p {}
+#contenido #secundario #sobremi p {
+  margin: 0px;
+  padding: 5px;
+}
 
 #contenido #secundario div {
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  padding: 0px;
 }
 
 #contenido #secundario ul {
