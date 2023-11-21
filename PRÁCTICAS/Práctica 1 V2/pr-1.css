@@ -65,10 +65,10 @@ ol {
 
 /* ---- Layout ------------------------------------------------------------- */
 
-/* #contenedor {
-  width: 770px;
+#contenedor {
+  width: 97%;
   margin: 50px auto 0 auto;
-} */
+}
 
 #cabecera {
   width: 100%;
@@ -120,14 +120,10 @@ ol {
   box-shadow: inset 0 -15px 8.5px -10.5px #a0b9f3;
   /* NUEVO */
   color: #6685CC;
-  /* position: relative; */
 }
 
 /* ---- Cabecera ----------------------------------------------------------- */
 #cabecera #logo {
-  /* position: absolute;
-  top: 35px;
-  left: 35px; */
   margin: 0;
 }
 
@@ -142,11 +138,11 @@ ol {
   text-decoration: underline;
 }
 
-#cabecera #buscador {
-  /* position: absolute;
+/* #cabecera #buscador {
+  position: absolute;
   top: 40px;
-  right: 20px; */
-}
+  right: 20px;
+} */
 
 #cabecera #buscador legend {
   display: none;
@@ -288,7 +284,7 @@ ol {
 
 @media screen and (max-width: 600px) {
    #contenido #secundario :is(div.col-e-12:first-child, div.col-e-12:last-child)  {
-    padding: 0px 5px 0px 0px;
+    padding-right: 5px;
   } 
 }
 
