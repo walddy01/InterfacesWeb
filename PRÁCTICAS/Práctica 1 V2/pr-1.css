@@ -24,8 +24,11 @@ p {
   padding: 0;
 }
 
-.clear {
+.row::after,
+.clearfix {
+  content: "";
   clear: both;
+  display: table;
 }
 
 h1,
@@ -91,7 +94,6 @@ ol {
 }
 
 #contenido #secundario {
-  float: left;
   width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
@@ -282,6 +284,12 @@ ol {
 #contenido #secundario div {
   /* padding: 0 10px; */
   padding: 0px;
+}
+
+@media screen and (max-width: 600px) {
+   #contenido #secundario :is(div.col-e-12:first-child, div.col-e-12:last-child)  {
+    padding: 0px 5px 0px 0px;
+  } 
 }
 
 #contenido #secundario ul {
