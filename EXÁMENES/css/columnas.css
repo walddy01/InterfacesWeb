@@ -58,8 +58,8 @@
         width: 35%;
         margin-left: calc(3vh + 3rem);
         position: absolute;
-        transform: translateY(-260px);
-        /* top: 75px; */
+        /* transform: translateY(-260px); */
+        top: 75px;
     }
   
     .col-e-1 {width: 8.33%;}

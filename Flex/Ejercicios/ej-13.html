@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 13</title>
+  <link rel="stylesheet" href="ej-10.css">
+
+  <style>
+    /* Estilos para este ejercicio concreto */
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+    }
+
+    .sidebar {
+      float: left;
+      width: 33.3333%;
+      height: 300px;
+    }
+
+    .main-content {
+      float: left;
+      width: 33.3333%;
+      height: 300px;
+    }
+
+    .sub-content {
+      float: left;
+      width: 33.3333%;
+      height: 300px;
+    }
+
+    .footer {
+      clear: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">header</div>
+
+  <div class="container">
+    <div class="sidebar">sidebar</div>
+    <div class="main-content">main content</div>
+    <div class="sub-content">sub content </div>
+
+    <div class="footer">footer</div>
+  </div>
+
+  <p><strong>Explicación:</strong></p>
+  <p>La primera modificación es sacar el header del contenedor principal. La segunda es que en el CSS hay que cambiar la anchura de la clase container, de 100% a 1024px.</p>
+  <p>No hace falta indicar expresamente que la cabecera adopte el 100% de la anchura de pantalla, dado que es un div y ese es su comportamiento por defecto.</p>
+
+</body>
+
+</html>

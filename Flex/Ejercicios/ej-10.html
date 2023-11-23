@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 10</title>
+  <link rel="stylesheet" href="ej-10.css">
+
+  <style>
+    /* Estilos para este ejercicio concreto */
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      float: right;
+    }
+
+    .navigation {
+      float: left;
+    }
+
+    .sidebar {
+      float: left;
+      width: 25%;
+      height: 300px;
+    }
+
+    .sub-content {
+      float: right;
+      width: 70%;
+      height: 140px;
+      margin-bottom: 20px;
+    }
+
+    .sub-content-2 {
+      float: right;
+      width: 70%;
+      height: 140px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header clearfix">
+      <div class="logo">logo</div>
+      <div class="navigation">navigation</div>
+    </div>
+
+    <div class="main-content clearfix">
+      <div class="sidebar">sidebar</div>
+      <div class="sub-content">sub content</div>
+      <div class="sub-content-2">sub content 2</div>
+    </div>
+
+    <div class="footer">footer</div>
+
+  </div>
+
+  <p><strong>Explicación:</strong></p>
+  <p>En el HTML hay que añadir la clase <code>clearfix</code> a aquellos elementos que contengan elementos flotantes dentro, en este caso <code>header</code> y <code>main-content</code>.</p>
+  <p>En el CSS, la principal dificultad está en la zona central. Hay que usar <code>float</code> en los 3 elementos y asegurarnos de que cada uno ocupa un porcentaje de su contenedor suficientemente grande como para conseguir el layout que nos piden, pero no tanto como para que desborde la anchura del contenedor y se vayan elementos a la línea siguiente.</p>
+
+</body>
+
+</html>

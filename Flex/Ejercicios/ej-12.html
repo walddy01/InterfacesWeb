@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 12</title>
+  <link rel="stylesheet" href="ej-10.css">
+
+  <style>
+    /* Estilos para este ejercicio concreto */
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .sidebar {
+      float: left;
+      width: 33.3333%;
+      height: 300px;
+    }
+
+    .main-content {
+      float: left;
+      width: 33.3333%;
+      height: 300px;
+    }
+
+    .sub-content {
+      float: left;
+      width: 33.3333%;
+      height: 300px;
+    }
+
+    .footer {
+      clear: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">header</div>
+
+    <div class="sidebar">sidebar</div>
+    <div class="main-content">main content</div>
+    <div class="sub-content">sub content </div>
+
+    <div class="footer">footer</div>
+  </div>
+
+  <p><strong>Explicación:</strong></p>
+  <p>En esta ocasión no podemos hay que añadir la clase <code>clearfix</code> a ningún elemento porque los elementos flotantes no tienen un contenedor común. Por tanto, tenemos que incluir <code>clear</code> en el footer para que el navegador lo sitúe debajo de los 3 elementos flotantes. Puedes observar con el inspector la diferencia de añadir o no la propiedad clear al footer.</p>
+
+</body>
+
+</html>

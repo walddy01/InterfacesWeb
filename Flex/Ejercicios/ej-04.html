@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 4</title>
+  <!-- highlight.css -->
+  <link rel="stylesheet" href="../highlight/vs2015.min.css">
+
+  <style>
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .divtexto {
+      background-color: coral;
+    }
+
+    .div1 {
+      float: right;
+      padding: 50px;
+      background-color: pink;
+      margin-left: 50px;
+    }
+
+    .div2 {
+      float: left;
+      padding: 5px;
+      background-color: aqua;
+    }
+
+    /* Estilos para la imagen de la solución */
+    img.img-centered {
+      box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 1);
+      display: block;
+      margin: 30px auto;
+      max-width: 760px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clearfix">
+    <div class="div1">Div1</div>
+    <div class="divtexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum possimus eius cum a hic excepturi molestias. Neque saepe fugit, placeat dolor autem porro voluptatibus numquam iste reprehenderit molestias ea.</div>
+    <div class="div2">Div2</div>
+  </div>
+
+  <div style="margin-top: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corporis perferendis eos facilis, commodi assumenda et sequi eligendi iure? Officiis tempora labore id expedita asperiores aperiam sint doloribus facere qui</div>
+
+  <hr style="margin: 30px 0;">
+
+  <p><strong>Explicación:</strong></p>
+  <p>El motivo por el que no se desplaza hacia abajo es que está tomando como referencia el borde inferior del párrafo con fondo naranja, no el borde inferior de Div1 como cabría esperar. Y esto ocurre porque tanto Div1 como Div2 están flotando en la página, por lo que el navegador <u>sitúa el segundo párrafo a partir del final del último elemento que no flota</u>, que es el primer párrafo. Lo que sí hace el navegador es desplazar el texto para que sea visible, pero el comienzo del segundo párrafo no es donde comienza el texto, sino el final del primer párrafo.</p>
+
+  <img class="img-centered max-760px" src="../img/img-ej-4-sol.jpg" alt="Explicación ejercicio 4">
+
+  <p>La solución está en el uso del conocido <a href="https://www.w3schools.com/howto/howto_css_clearfix.asp" target="_blank">clearfix hack.</a></p>
+  <p>Básicamente, consiste en englobar los elementos flotantes en un contenedor y aplicarle a ese contenedor la clase clearfix:</p>
+
+  <pre><code class="language-css">.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}</code></pre>
+
+  <p>Ahora ya no hace falta usar <code>clear</code> en el último párrafo, quedando el html como sigue:</p>
+  <pre><code class="language-html">&lt;body&gt;
+  &lt;div class=&quot;clearfix&quot;&gt;
+    &lt;div class=&quot;div1&quot;&gt;Div1&lt;/div&gt;
+    &lt;div class=&quot;divtexto&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum possimus eius cum a hic excepturi molestias. Neque saepe fugit, placeat dolor autem porro voluptatibus numquam iste reprehenderit molestias ea.&lt;/div&gt;
+    &lt;div class=&quot;div2&quot;&gt;Div2&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;margin-top: 30px;&quot;&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corporis perferendis eos facilis, commodi assumenda et sequi eligendi iure? Officiis tempora labore id expedita asperiores aperiam sint doloribus facere qui&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+
+  <script src="../highlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+
+
+</html>

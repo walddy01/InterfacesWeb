@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 5</title>
+
+  <style>
+    div {
+      float: left;
+      width: 25%;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    .div1 {
+      background-color: aqua;
+    }
+
+    .div2 {
+      background-color: beige;
+    }
+
+    .div3 {
+      background-color: coral;
+    }
+
+    .div4 {
+      background-color: cornflowerblue;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="div1">Div1</div>
+  <div class="div2">Div2</div>
+  <div class="div3">Div3</div>
+  <div class="div4">Div4</div>
+
+  <p style=""><strong>Explicación:</strong></p>
+
+  <p>Si simplemente ponemos los divs a flotar, el padding nos descuadra todo. El motivo es que al añadir alguna propiedad que modifica la anchura de los divs, como padding o border, la anchura del 25% no lo tiene en cuenta y, como consecuencia, la anchura total pasa del 100%, por lo que el o los divs que no quepan pasan a la siguiente línea. Para solucionarlo, tenemos que usar la propiedad box-sizing con el valor border-box.</p>
+</body>
+
+</html>

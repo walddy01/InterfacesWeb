@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 6</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 20%;
+    }
+
+    .divtexto {
+      float: right;
+      width: 80%;
+      padding: 0px 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <img src="https://picsum.photos/id/237/200/100" alt="Perrito">
+  <div class="divtexto">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cupiditate aperiam distinctio error exercitationem reiciendis tenetur, nostrum impedit ut necessitatibus, ipsa voluptates repudiandae perspiciatis amet adipisci nihil dignissimos tempore ab! Accusantium itaque culpa ratione maxime aliquam necessitatibus voluptatem atque, ea ab expedita voluptates voluptas magni vel rem accusamus explicabo tempora quisquam aperiam officia? Asperiores accusantium numquam adipisci suscipit facere consequatur.
+  </div>
+
+  <p style="margin-top: 100px;"><strong>Explicación:</strong></p>
+  <p>Es evidente que para que el texto esté a la derecha de la imagen alguien debe estar flotando: el texto, la imagen o ambos. Veamos las opciones:</p>
+
+  <ol>
+    <li>
+      <p>Sólo flota la imagen: Si la imagen flota a la izquierda, cuando el texto supere la altura de la imagen se irá a la izquierda, no respetando la situación que nos piden (*).</p>
+    </li>
+    <li>
+      <p>Sólo flota el texto: Dado que el texto es largo, aunque lo flotemos a la derecha no causará ningún efecto en el resultado. Definitivamente, no es la solución.</p>
+    </li>
+    <li>
+      <p>Flotan ambos: Como en la situación anterior, aunque flotemos ambos elementos, como el texto es largo no cabrá en el hueco que deja la imagen a su derecha, por lo que se desplazará completamente hacia abajo. Tampoco es la solución.</p>
+    </li>
+  </ol>
+
+  <p>La solución está en usar <code>width</code> junto con <code>float</code>. La imagen ya está a la izquierda, por lo que no necesitamos que flote. Sólo necesitamos que el texto flote a la derecha y darles a ambos una anchura fija en porcentaje.</p>
+  <p>Nota: Fíjate que al redimensionar la ventana esta explicación se <i>monta</i> encima de la imagen y el texto. Habría que englobarlos ambos en una contenedor y poner a ese contenedor la clase <code>clearfix</code>, pero no está hecho así para mantener la solución lo más limpia posible.</p>
+  <p>(*) Es posible alcanzar la disposición que nos piden haciendo flotar la imagen a la izquierda si al texto le damos un valor de <code>overflow</code> distinto de <code>visible</code>:</p>
+  <pre><code>img {
+  width: 20%;
+  float: left
+}
+
+.divtexto {
+  overflow: hidden;
+  width: 80%;
+  padding: 0px 15px;
+}</code></pre>
+  <p>Fuente: <a href="https://www.w3.org/TR/css-overflow-3/" target="_blank">https://www.w3.org/TR/css-overflow-3/</a></p>
+
+</body>
+
+</html>

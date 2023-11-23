@@ -1,0 +1,25 @@
+#contenedor {
+    display: flex;
+    width: 100%;
+}
+
+
+.gap {
+    display: flex;
+    column-gap: 100%;
+}
+
+.div1 {
+  padding: 50px;
+  background-color: pink;
+}
+
+.div2 {
+  padding: 50px;
+  background-color: aqua;
+}
+
+.div3 {
+  padding: 50px;
+  background-color: coral;
+}
