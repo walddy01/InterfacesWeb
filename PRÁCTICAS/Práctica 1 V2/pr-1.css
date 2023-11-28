@@ -23,7 +23,7 @@ p {
 }
 
 .row::after,
-.clearfix {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
@@ -63,10 +63,10 @@ ol {
 
 /* ---- Layout ------------------------------------------------------------- */
 
-#contenedor {
-  width: 97%;
+/* #contenedor {
+  width: 770px;
   margin: 50px auto 0 auto;
-}
+} */
 
 #cabecera {
   width: 100%;
