@@ -7,29 +7,41 @@
   <title>Ejercicios float y clear. Ej. 5</title>
 
   <style>
-    div {
-      float: left;
-      width: 25%;
-      padding: 20px;
-      text-align: center;
-      font-weight: bold;
-      box-sizing: border-box;
+    .contenedor {
+      display: flex;
+      flex-direction: row;
     }
 
     .div1 {
+      flex-grow: 1;
       background-color: aqua;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
     }
 
     .div2 {
+      flex-grow: 1;
       background-color: beige;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
     }
 
     .div3 {
+      flex-grow: 1;
       background-color: coral;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
     }
 
     .div4 {
+      flex-grow: 1;
       background-color: cornflowerblue;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
     }
   </style>
 
@@ -37,14 +49,13 @@
 </head>
 
 <body>
-  <div class="div1">Div1</div>
-  <div class="div2">Div2</div>
-  <div class="div3">Div3</div>
-  <div class="div4">Div4</div>
+  <div class="contenedor">
+    <div class="div1">Div1</div>
+    <div class="div2">Div2</div>
+    <div class="div3">Div3</div>
+    <div class="div4">Div4</div>
+  </div>
 
-  <p style=""><strong>Explicación:</strong></p>
-
-  <p>Si simplemente ponemos los divs a flotar, el padding nos descuadra todo. El motivo es que al añadir alguna propiedad que modifica la anchura de los divs, como padding o border, la anchura del 25% no lo tiene en cuenta y, como consecuencia, la anchura total pasa del 100%, por lo que el o los divs que no quepan pasan a la siguiente línea. Para solucionarlo, tenemos que usar la propiedad box-sizing con el valor border-box.</p>
 </body>
 
 </html>

@@ -37,9 +37,7 @@
       width: 25%;
     }
 
-    .content {
-      width: 75%;
-    }
+    
 
     .menu ul {
       list-style-type: none;
@@ -53,41 +51,60 @@
       background-color: #33b5e5;
       color: #ffffff;
     }
+
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .main {
+      /* display: flex;
+      flex-direction: row; */
+    }
+
+    .content {
+      /* width: 75%; */
+    }
+
   </style>
 </head>
 
 <body>
 
-  <div class="header">
-    <h1>Cabecera</h1>
-  </div>
-
-  <div class="clearfix">
-    <div class="column menu">
-      <ul>
-        <li>Lorem</li>
-        <li>Ipsum</li>
-        <li>Dolor</li>
-        <li>Sit</li>
-      </ul>
+  <div class="contenedor">
+    <div class="header">
+      <h1>Cabecera</h1>
     </div>
 
-    <div class="column content">
-      <h1>Lorem ipsum</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum cum quidem! Velit minima libero quasi
-        aspernatur commodi explicabo adipisci, quis facilis, veniam, quae aperiam unde numquam magnam minus nesciunt.
-      </p>
-      <p>Veritatis numquam fugiat rem odit perferendis maiores delectus et reiciendis, saepe optio ipsum facere ipsam
-        accusantium maxime ab deleniti neque quod? Vitae, nulla illo deleniti commodi quaerat ab tempora dicta!</p>
+    <div class="main">
+
+      <div class="menu">
+        <ul>
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>Elemento 4</li>
+        </ul>
+
+        <div class="content">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum cum quidem! Velit minima libero quasi
+            aspernatur commodi explicabo adipisci, quis facilis, veniam, quae aperiam unde numquam magnam minus nesciunt.
+          </p>
+          <p>Veritatis numquam fugiat rem odit perferendis maiores delectus et reiciendis, saepe optio ipsum facere ipsam
+            accusantium maxime ab deleniti neque quod? Vitae, nulla illo deleniti commodi quaerat ab tempora dicta!</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="footer">
+      <p>Pie de página</p>
     </div>
   </div>
-
-  <div class="footer">
-    <p>Pie de página</p>
-  </div>
-
-  <p style="margin-top: 10px;"><strong>Explicación:</strong></p>
-  <p>Para hacer la parte central hay una manera más rebuscada pero también válida. Basándonos en la solución del ejercicio anterior, podríamos hacer que sólo la zona derecha flotase (a la derecha), pero tendríamos el problema de que la zona izquierda sigue siendo un elemento de bloque, aunque le hayamos dado una anchura del 25%, por lo que sigue ocupando toda la línea y la parte derecha se desplazaría hacia abajo. Para resolver esto tenemos que cambiar el valor de <code>display</code>, pero no podemos poner <code>inline</code> porque a los elementos inline no se les aplica <code>width</code>, así que tendría que sea <code>inline-block</code>.</p>
 
 </body>
 
