@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(242, 245, 254);
-  background: linear-gradient(0deg, rgba(242, 245, 254, 1) 80%, rgba(151, 176, 245, 1) 100%);
+  background: linear-gradient(0deg, #f2f5fe 80%, #96aff5 100%);
   font: 70%/160% "verdana", sans-serif;
   color: #192666;
 }
@@ -24,7 +24,7 @@ p {
 
 .row::after,
 .clearfix::after {
-  content: "";
+  content: ""; 
   clear: both;
   display: table;
 }
@@ -63,54 +63,48 @@ ol {
 
 /* ---- Layout ------------------------------------------------------------- */
 
-/* #contenedor {
-  width: 770px;
-  margin: 50px auto 0 auto;
-} */
+#contenedor {
+  margin: 60px 10px 0 10px;
+}
 
 #cabecera {
-  width: 100%;
   margin: 0;
   padding: 30px;
   background: #233C9B url("img/cabecera.jpg") no-repeat;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   background-size: cover;
   color: #FFF;
 }
 
 #contenido {
-  width: 100%;
   background: #FFF;
 }
 
 #contenido #principal {
-  width: 100%;
   margin-top: 15px;
   margin-right: 10px;
   background: #FFF;
 }
 
 #contenido #secundario {
-  width: 100%;
   margin: 15px 0 0 0;
   padding: 0;
   background-color: #CEDBF9;
-  border-radius: 20px 20px 0px 0px;
-  -webkit-box-shadow: inset 0 0 17px -2px #a0b9f3;
-  -moz-box-shadow: inset 0 0 17px -2px #a0b9f3;
-  box-shadow: inset 0 0 17px -2px #a0b9f3;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-box-shadow: inset 0 0 17px -2px #b7caf6;
+  -moz-box-shadow: inset 0 0 17px -2px #b7caf6;
+  box-shadow: inset 0 0 17px -2px #b7caf6;
   margin-bottom: 10px;
 }
 
 #pie {
-  /* clear: both; */
   padding: 30px;
   margin-bottom: 50px;
   background-color: white;
   border-radius:  0px 0px 20px 20px;
-  -webkit-box-shadow: inset 0 -15px 8.5px -10.5px #a0b9f3;
-  -moz-box-shadow: inset 0 -15px 8.5px -10.5px #a0b9f3;
-  box-shadow: inset 0 -15px 8.5px -10.5px #a0b9f3;
+  -webkit-box-shadow: inset 0 -10px 15px -10.5px #b7caf6;
+  -moz-box-shadow: inset 0 -10px 15px -10.5px #b7caf6;
+  box-shadow: inset 0 -10px 15px -10.5px #b7caf6;
   color: #6685CC;
 }
 
@@ -181,10 +175,10 @@ ol {
 #contenido .articulo {
   margin: 0;
   padding: 20px;
-  border-radius: 20px 20px 0px 0px;
-  -webkit-box-shadow: inset 0 0 17px -2px #a0b9f3;
-  -moz-box-shadow: inset 0 0 17px -2px #a0b9f3;
-  box-shadow: inset 0 0 17px -2px #a0b9f3;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-box-shadow: inset 0 0 17px -2px #b7caf6;
+  -moz-box-shadow: inset 0 0 17px -2px #b7caf6;
+  box-shadow: inset 0 0 17px -2px #b7caf6;
   margin-bottom: 10px;
 }
 
