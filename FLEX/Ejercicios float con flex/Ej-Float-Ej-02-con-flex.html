@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejercicios Float. Ej. 2. Ahora con flex</title>
+  <link rel="stylesheet" href="css/Ej-Float-Ej-02.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="div1">Div1</div>
+    <div class="div2">Div2</div>
+    <div class="div3">Div3</div>
+  </div>
+
+  <hr>
+
+  <p>Otra forma de hacerlo, más fea pero válida, sería con un contenedor interior:</p>
+
+  <u>HTML:</u>
+
+  <pre>&lt;div id=&quot;container&quot;&gt;
+  &lt;div class=&quot;div1&quot;&gt;Div1&lt;/div&gt;
+  &lt;div id=&quot;container-interior&quot;&gt;
+    &lt;div class=&quot;div2&quot;&gt;Div2&lt;/div&gt;
+    &lt;div class=&quot;div3&quot;&gt;Div3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </pre>
+
+  <u>CSS:</u>
+  <pre>#container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#container-interior {
+  display: flex;
+}</pre>
+
+
+
+</body>
+
+</html>

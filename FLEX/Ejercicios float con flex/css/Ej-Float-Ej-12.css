@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+}
+
+main {
+  display: flex;
+}
+
+.sidebar,
+.main-content,
+.sub-content {
+  height: 300px;
+  flex-grow: 1;
+  flex-basis: 0%;
+}

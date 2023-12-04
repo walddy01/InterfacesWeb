@@ -1,0 +1,41 @@
+/* To Do List */
+.todolist {
+  width: 50%;
+  padding: 15px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* Individual Todo */
+.todo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+/* Priority icon dot */
+.icon {
+  margin: 0 10px;
+}
+
+/* Info of the todo, title and date */
+.todo-info {
+  margin: 10px;
+}
+
+/* Title */
+.todo-title {
+  font-size: 24pt;
+}
+
+/* Date */
+.todo-date {
+  font-size: 12pt;
+}
+
+/* Checkboxes */
+.checkbox-right {
+  margin: 35px 35px 0 0;
+}
