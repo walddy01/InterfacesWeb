@@ -44,25 +44,23 @@ div {
 
 #container-izq #container-izq-5 {
   display: flex;
+  flex-wrap: wrap-reverse;
   gap: 5px;
 }
 
 #container-izq #container-izq-6 {
-  flex-grow: 1;
   background-color: lightcoral;
   height: 75px;
   width: 75px;
 }
 
 #container-izq #container-izq-7 {
-  flex-grow: 1;
   background-color: lightgreen;
   height: 75px;
   width: 75px;
 }
 
 #container-izq #container-izq-8 {
-  flex-grow: 1;
   background-color: lightblue;
   height: 75px;
   width: 75px;
@@ -90,7 +88,7 @@ div {
 
 #container-centro #container-centro-3 {
   display: flex;
-  gap: 5px;
+  /* gap: 5px; */
   margin-top: auto;
   border: 0px;
 }
@@ -117,14 +115,16 @@ div {
 }
 
 #container-centro #container-centro-8 {
-  flex-grow: 0;
+  order: 1;
+  flex-grow: 2;
   width: 50px;
   height: 50px;
   background-color: lightcoral;
 }
 
 #container-centro #container-centro-9 {
-  flex-grow: 2;
+  order: 0;
+  flex-grow: 0;
   background-color: lightblue;
   width: 50px;
   height: 50px;
