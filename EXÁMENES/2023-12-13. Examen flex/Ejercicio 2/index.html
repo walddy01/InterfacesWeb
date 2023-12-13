@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="columnas-flex.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h4>El contendor general será de 800px para anchuras mayores de 900px y ocupará toda la anchura disponible para
+            anchuras menores.</h4>
+        <hr>
+
+        <h4>
+            Fila 1. La zona izquierda ocupa 10 columnas para escritorio y 9 para tablets. La zona derecha ocupa el resto
+            del espacio disponible. Ambas ocupan el 100% para móviles. Además, para móviles, la zona derecha debe
+            aparecer antes que la izquierda.
+        </h4>
+
+        <div class="row fila1">
+            <div class="col-e-10 col-t-9">
+                <p>Zona izquierda</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum aliquam illum aperiam dolor
+                    hic rerum, in ratione incidunt enim aut quisquam neque possimus dicta magnam porro necessitatibus!
+                    Voluptate, ab.
+                </p>
+            </div>
+
+            <div class="col">
+                <p>Zona derecha</p>
+            </div>
+        </div>
+
+        <h4>
+            Fila 2. La zona central siempre ocupa el 50% del espacio disponible. Las otras dos zonas se reparten el
+            espacio disponible. pero si se elimina una de ellas, la que queda se apropia del espacio que ha dejado la
+            columna eliminada. Todas ocupan el 100% para móviles.
+        </h4>
+
+        <div class="row">
+            <div class="col">
+                Zona izquierda
+            </div>
+
+            <div class="col-e-6 col-t-6">
+                Zona central
+            </div>
+
+            <div class="col">
+                Zona derecha
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
