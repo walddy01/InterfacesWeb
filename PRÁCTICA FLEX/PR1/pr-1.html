@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi sitio web - walddy</title>
     <link rel="stylesheet" href="pr-1.css">
-    <link rel="stylesheet" href="pr-1-columnas.css">
+    <link rel="stylesheet" href="columnas-flex.css">
 
 
 </head>
@@ -19,9 +19,9 @@
         <!-- Cabecera -->
         <header id="cabecera" class="row">
             <!-- Logo -->
-            <h1 id="logo" class="f-left"><a href="./" title="Mi sitio web">Mi sitio web</a></h1>
+            <h1 id="logo"><a href="./" title="Mi sitio web">Mi sitio web</a></h1>
             <!-- Buscador -->
-            <div id="buscador" class="f-right">
+            <div id="buscador">
                 <form action="/">
                     <fieldset>
                         <legend>Buscador</legend>
@@ -36,8 +36,8 @@
 
         <!-- Menú principal -->
         <nav id="menu">
-            <div class="clearfix">
-                <ul>
+            <div>
+                <ul id="listaNav">
                     <li><a href="#">Inicio</a></li>
                     <li class="seleccionado"><a href="#">Blog</a></li>
                     <li><a href="#">Sobre mi</a></li>

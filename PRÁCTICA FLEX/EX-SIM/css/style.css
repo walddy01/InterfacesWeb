@@ -6,13 +6,6 @@
     margin: 0 auto;
 }
 
-.f-left {
-    float: left;
-}
-
-.f-right {
-    float: right;
-}
 
 header {
     background-color: var(--color-fondo);
@@ -25,18 +18,21 @@ header {
     
 }
 
+.caja-imagen-homer {
+    margin-right: 15px;
+}
+
 .caja-imagen-homer img {
     width: 160px;
     background-color: white;
     border-radius: 50%;
-    margin-right: 15px;
     -webkit-box-shadow: 0 0 15px 3px #000000;
     -moz-box-shadow: 0 0 15px 3px #000000;
     box-shadow: 0 0 15px 3px #000000;
 }
 
 .texto-homer {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 10px;
 }
 
@@ -83,6 +79,7 @@ select {
     background-color: lightgreen;
     padding: 10PX;
 }
+
 footer {
     background-color: var(--color-fondo);
     padding: 20px;

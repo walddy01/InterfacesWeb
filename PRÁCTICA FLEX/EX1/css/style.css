@@ -31,6 +31,7 @@ header a {
     text-decoration: none;
     background-color: var(--color-fondo);
     color: black;
+    margin-left: auto;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -38,20 +39,9 @@ header a {
 header a:hover {
     background-color: black;
     color: white;
-    /* animation: cambiarColor 0.5s forwards; */
 }
 
-/* @keyframes cambiarColor {
-    from {
-        background-color: var(--color-fondo);
-        color: black;
-    }
-    to {
-        background-color: black;
-        color: white;
-    } */
-
-main img {
+section img {
     width: 100%;
 }
 

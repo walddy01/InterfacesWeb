@@ -10,6 +10,12 @@
   float: left;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

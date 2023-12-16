@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulacro Examen - walddy</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/columnas.css">
+    <link rel="stylesheet" href="css/columnas-flex.css">
 </head>
 
 <body>
@@ -34,22 +34,24 @@
                         <form action="/">
                             <fieldset>
                                 <legend>Comprar Coche</legend>
-                                <div class="col-e-4 col-t-4">
-                                    <label for="nombre">Nombre:</label>
-                                </div>
-                                <div class="col-e-8 col-t-8">
-                                    <input type="text" id="nombre">
-                                </div>
+                                <div class="row">
+                                    <div class="col-e-3 col-t-4">
+                                        <label for="nombre">Nombre:</label>
+                                    </div>
+                                    <div class="col-e-9 col-t-8">
+                                        <input type="text" id="nombre">
+                                    </div>
 
-                                <div class="col-e-4 col-t-4">
-                                    <label for="coche">Coche:</label>
-                                </div>
-                                <div class="col-e-8 col-t-8">
-                                    <select name="coche" id="coche">
-                                        <option value="1">Volvo</option>
-                                        <option value="2">Mercedes</option>
-                                        <option value="3">Audi</option>
-                                    </select>
+                                    <div class="col-e-3 col-t-4">
+                                        <label for="coche">Coche:</label>
+                                    </div>
+                                    <div class="col-e-9 col-t-8">
+                                        <select name="coche" id="coche">
+                                            <option value="1">Volvo</option>
+                                            <option value="2">Mercedes</option>
+                                            <option value="3">Audi</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <input type="button" value="Enviar">
                             </fieldset>

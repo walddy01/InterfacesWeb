@@ -124,6 +124,10 @@ ol {
   text-decoration: underline;
 }
 
+#buscador {
+  margin-left: auto;
+}
+
 #cabecera #buscador legend {
   display: none;
 }
@@ -139,6 +143,8 @@ ol {
 }
 
 #menu ul {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 10px;
   padding: 0;
   list-style: none;
@@ -147,7 +153,6 @@ ol {
 #menu ul li {
   margin: 0 5px 0 0;
   padding: 0;
-  float: left;
 }
 
 #menu ul li a {
@@ -262,6 +267,18 @@ ol {
     padding-right: 5px;
   } 
 }
+
+#contenido #secundario div.col-e-12:nth-child(2) {
+  align-self: flex-start;
+}
+
+#contenido #secundario div.col-e-12:nth-child(3) {
+  align-self: flex-start;
+  order: 3;
+}
+
+
+
 
 #contenido #secundario ul {
   margin: 15px 0;
