@@ -7,8 +7,11 @@ body {
 }
 
 #container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 75%;
 }
+
+
 
 .header,
 .footer {
@@ -22,11 +25,11 @@ body {
 }
 
 .menu {
-  width: 25%;
+    grid-column: 1 / 2;
 }
 
 .content {
-  width: 75%;
+  grid-column: 2 / 3;
 }
 
 .menu ul {

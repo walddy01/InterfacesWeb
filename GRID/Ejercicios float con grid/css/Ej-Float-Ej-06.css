@@ -1,6 +1,5 @@
 #container {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
 }
 
 * {
@@ -9,11 +8,14 @@
 
 img {
   width: 200px;
+  grid-row: 1 / 2;
 }
 
 .divtexto {
   padding: 0px 15px;
   background-color: aqua;
+  grid-row: 1 / 2;
+  align-self: start;
 }
 
 code {

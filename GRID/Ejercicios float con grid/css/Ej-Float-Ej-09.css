@@ -1,10 +1,8 @@
-#container {
-  display: flex;
-}
-
 #header {
   background-color: #333;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, auto) 1fr;
 }
 
 #header>*:last-child {
