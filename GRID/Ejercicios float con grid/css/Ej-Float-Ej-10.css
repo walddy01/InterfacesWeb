@@ -29,7 +29,7 @@
 .sub-content-wrapper {
   /* flex-basis: 75%; */
   /* display: flex; */
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 0px;
   grid-column: 1 / 2;
 
