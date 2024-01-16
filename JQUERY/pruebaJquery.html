@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <h1>Hola mundo</h1>
+    <div id="container"> 
+        <p class="primero">1</p> 
+        <p>2</p> 
+        <p>3</p> 
+        <p>4</p>
+    </div>
+
+    <input id="mi-boton" type="button" value="Enviar">
+
+    <script>
+
+        $(document).ready(function () {
+           
+            $("p").click(pulsar);
+
+            function pulsar(){
+                console.log("Has pulsado el texto " + this.innerText);
+            }
+        });
+
+        
+    </script>
+</body>
+</html>
