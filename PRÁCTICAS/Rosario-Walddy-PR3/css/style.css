@@ -1,0 +1,99 @@
+:root {
+    /* ---- COLORES HEADER ---- */
+    --color-header-1: #e5b25d;
+    --color-header-2: #f2dd6e;
+
+    /* ---- COLORES NAV ---- */
+    --color-nav-1: #523a34;
+    --color-nav-2: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+header {
+    background-color: var(--color-header-2);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+header * {
+    font-weight: bold;
+    padding: 0px 3px 0px 3px;
+}
+
+.curso {
+    background-color: var(--color-header-1);
+}
+
+.subtitulo {
+    background-color: var(--color-header-1);
+}
+
+.titulo * {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--color-nav-1);
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+nav * {
+    background-color: var(--color-nav-1);
+    color: var(--color-nav-2);
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav:hover {
+    background-color: var(--color-nav-2);
+}
+
+nav *:hover {
+    background-color: var(--color-nav-2);
+    color: var(--color-nav-1);
+}
+
+main {
+    display: grid;
+}
+
+main :nth-child(1) {
+    background-color: lightcoral;
+}
+
+main :nth-child(2) {
+    background-color: lightgreen;
+}
+
+main :nth-child(3) {
+    background-color: lightblue;
+}
+
+main :nth-child(4) {
+    background-color: lightgray;
+}
+
+main :nth-child(5) {
+    background-color: lightsalmon;
+}
+
+main :nth-child(6) {
+    background-color: lightyellow;
+}
+
+aside {
+    display: grid;
+}
+
+img {
+    width: 200px;
+}
