@@ -17,19 +17,23 @@
     </div>
 
     <input id="mi-boton" type="button" value="Enviar">
+    <a href="https://www.google.es">GOOGLE</a>
 
     <script>
 
         $(document).ready(function () {
            
-            $("p").click(pulsar);
+            $("a").on("click", function(e){
+                console.clear();
+                console.log(e);
+                e.preventDefault();
+            })
 
             function pulsar(){
-                console.log("Has pulsado el texto " + this.innerText);
+                // $(this).hide();
+                console.log("has movido el raton");
             }
         });
-
-        
     </script>
 </body>
 </html>
