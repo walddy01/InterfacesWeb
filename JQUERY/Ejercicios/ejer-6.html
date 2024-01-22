@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <form> 
+        <label for="checkbox"> Selecciona para habilitar el botón:</label> 
+        <input type="checkbox" id="checkbox"> 
+        <br> 
+        <button id="submit-button" disabled>Enviar</button> 
+    </form>
+
+    <script>
+
+        $(document).ready(function () {
+           
+            $("input").on("click", pulsar)
+
+            function pulsar(){
+                console.log(this);
+                console.log(this.prop("checked"));
+            //    if (this.attr("checked")) {
+            //     console.log("buenas");
+            //    }
+            }
+        });
+    </script>
+</body>
+</html>
