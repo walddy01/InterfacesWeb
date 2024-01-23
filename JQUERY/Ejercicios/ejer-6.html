@@ -19,14 +19,14 @@
 
         $(document).ready(function () {
            
-            $("input").on("click", pulsar)
+            $("#checkbox").on("click", pulsar)
 
             function pulsar(){
-                console.log(this);
-                console.log(this.prop("checked"));
-            //    if (this.attr("checked")) {
-            //     console.log("buenas");
-            //    }
+                if($(this).prop("checked")){
+                    $("#submit-button").prop("disabled", false);
+                } else {
+                    $("#submit-button").prop("disabled", true)
+                }
             }
         });
     </script>
