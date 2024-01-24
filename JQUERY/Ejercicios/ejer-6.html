@@ -18,16 +18,14 @@
     <script>
 
         $(document).ready(function () {
-           
-            $("#checkbox").on("click", pulsar)
-
-            function pulsar(){
+            console.log("a");
+            $("#checkbox").on("click", function () {
                 if($(this).prop("checked")){
                     $("#submit-button").prop("disabled", false);
                 } else {
                     $("#submit-button").prop("disabled", true)
                 }
-            }
+            })
         });
     </script>
 </body>

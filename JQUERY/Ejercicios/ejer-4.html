@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style> 
+        #navbar { 
+          display: flex; 
+          background-color: black; 
+        } 
+       
+        .nav-item { 
+          padding: 10px; 
+          color: white; 
+          text-decoration: none; 
+        } 
+       
+        a.nav-item:hover, 
+        a.active { 
+          background-color: red; 
+        } 
+      </style>
+
+</head>
+<body>
+   
+    <nav id="navbar"> 
+        <a class="nav-item active" href="#">Inicio</a> 
+        <a class="nav-item" href="#">Nosotros</a> 
+        <a class="nav-item" href="#">Servicios</a> 
+        <a class="nav-item" href="#">Contacto</a> 
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $(".nav-item").on("click", function (){
+                  if($(".nav-item").hasClass("active")){
+                    $(".nav-item").removeClass("active")
+                    $(this).addClass("active");
+                  }
+            })
+        });
+    </script>
+</body>
+</html>

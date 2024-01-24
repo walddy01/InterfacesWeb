@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+    <button id="my-button">Botón</button> 
+    <input type="text" id="my-input" disabled> 
+
+    <script>
+        $(document).ready(function () {
+            $("#my-button").on("click", function () {
+              if($("input").prop("disabled")){
+                $("input").prop("disabled", false);
+              } else {
+                $("input").prop("disabled", true);
+              }
+            })
+        });
+    </script>
+</body>
+</html>
