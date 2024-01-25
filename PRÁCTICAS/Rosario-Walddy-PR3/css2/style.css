@@ -79,7 +79,7 @@ nav {
 
 section {
     display: grid;
-    grid-template-columns: repeat(2, auto-fit);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: auto-fit auto-fit;
     grid-auto-flow: column;
     gap: 20px;
@@ -124,8 +124,4 @@ aside {
     grid-row: 2 / 3;
     display: grid;
     row-gap: 20px;
-}
-
-img {
-    width: 100%;
 }

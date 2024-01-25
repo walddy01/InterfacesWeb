@@ -115,4 +115,8 @@
     /* aside img {
         width: 100%;
     } */
+
+    section {
+        grid-template-columns: auto 300px;
+    }
 }
