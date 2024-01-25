@@ -9,7 +9,6 @@
         'uno tres cuatro'
         'uno cinco cuatro'
         'uno cinco seis'
-        'uno . seis';
     }
 
     main * {
@@ -34,6 +33,7 @@
 
     main :nth-child(5) {
         grid-area: cinco;
+        align-self: start;
     }
 
     main :nth-child(6) {
