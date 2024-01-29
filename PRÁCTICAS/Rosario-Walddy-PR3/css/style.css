@@ -77,53 +77,47 @@ nav {
     color: var(--color-nav-1);
 }
 
-section {
+main {
     display: grid;
-    grid-template-columns: repeat(2, auto-fit);
-    grid-template-rows: auto-fit auto-fit;
-    grid-auto-flow: column;
+    margin: 20px;
     gap: 20px;
 }
 
 section {
-    margin: 20px;
-}
-
-main {
     display: grid;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
 
-main :nth-child(1) {
+section :nth-child(1) {
     background-color: lightcoral;
 }
 
-main :nth-child(2) {
+section :nth-child(2) {
     background-color: lightgreen;
 }
 
-main :nth-child(3) {
+section :nth-child(3) {
     background-color: lightblue;
 }
 
-main :nth-child(4) {
+section :nth-child(4) {
     background-color: lightgray;
 }
 
-main :nth-child(5) {
+section :nth-child(5) {
     background-color: lightsalmon;
 }
 
-main :nth-child(6) {
+section :nth-child(6) {
     background-color: lightyellow;
 }
 
 aside {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
     display: grid;
     gap: 20px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }
 
 img {
