@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 7</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <input type="radio" id="audi" name="brand" value="Audi">
+  <label for="audi">Audi</label>
+
+  <input type="radio" id="mercedes" name="brand" value="Mercedes">
+  <label for="mercedes">Mercedes</label>
+
+  <input type="radio" id="hyundai" name="brand" value="Hyundai">
+  <label for="hyundai">Hyundai</label>
+
+  <p id="message"></p>
+
+  <script>
+    $(document).ready(function () {
+      $("input").on("change", function () {
+        if ($(this).prop("checked")) {
+          $("#message").text($(this).val())
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>
