@@ -20,13 +20,20 @@
   <p id="message"></p>
 
   <script>
+//     A  partir  del  siguiente  HTML  en  el  que  tenemos  3  checkboxes  con 
+// marcas de coche, cuando el usuario marque o desmarque un checkbox 
+// aparecerá un mensaje indicando la opción u opciones seleccionadas. Si no ha 
+// seleccionado ninguna, también saldrá el mensaje indicándolo.
+
     $(document).ready(function () {
-      $("input").each(function(){
-          $(this).one("change", function(){
-            
-          })
+      $("input").on("change", function () {
+        if ($(this).prop("checked")) {
+          $("#message").text($(this).val())
+        }
       })
-    });
+    })
+
+ 
   </script>
 </body>
 

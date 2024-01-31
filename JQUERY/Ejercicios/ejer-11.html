@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 11</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <style>
+    #alert {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <select id="brands"> 
+    <option value="audi">Audi</option> 
+    <option value="bmw">BMW</option> 
+    <option value="mercedes">Mercedes</option> 
+    <option value="hyundai">Hyundai</option> 
+  </select> 
+  <div id="resultado"></div> 
+  
+
+  <script>
+    $(document).ready(function () {
+      i = 1;
+      $("#brands").on("change", function(){
+        $("#resultado").append("<br>"+i + ". Has seleccionado " + $(this).val());
+        i++;
+      })
+    });
+  </script>
+</body>
+
+</html>

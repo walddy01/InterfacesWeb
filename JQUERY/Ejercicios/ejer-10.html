@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 10</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <style>
+    #alert {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form id="login-form">
+    <input type="text" name="username" id="username" placeholder="Nombre de Usuario" />
+    <input type="password" name="password" id="password" placeholder="Contraseña" />
+    <input type="submit" id="submit-btn" value="Iniciar Sesión" />
+    <!-- <div id="alert"></div> -->
+  </form>
+
+  <script>
+    $(document).ready(function () {
+      $("input[type='submit']").on("click", function (e) {
+        e.preventDefault();
+        if($("#username").val() == "" || $("#password").val() == ""){
+          $("#alert").remove();
+          $("form").append("<div id='alert'></div>");
+          $("#alert").text("Rellena todos los campos").slideDown();
+        }else {
+          $("#alert").remove();
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>
