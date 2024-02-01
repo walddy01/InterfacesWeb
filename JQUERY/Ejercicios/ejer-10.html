@@ -25,14 +25,14 @@
 
   <script>
     $(document).ready(function () {
-      $("input[type='submit']").on("click", function (e) {
+      $("#login-form").on("submit", function (e) {
         e.preventDefault();
-        if($("#username").val() == "" || $("#password").val() == ""){
+        if($("#username").val().trim() == "" || $("#password").val().trim() == ""){
           $("#alert").remove();
-          $("form").append("<div id='alert'></div>");
+          $("form").after("<div id='alert'></div>");
           $("#alert").text("Rellena todos los campos").slideDown();
         }else {
-          $("#alert").remove();
+          $("#alert").hide();
         }
       })
     });

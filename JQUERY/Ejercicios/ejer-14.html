@@ -7,38 +7,56 @@
   <title>Ejercicio 14</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <style> 
-    #error-message { 
-      display: none; 
-      color: red; 
-    } 
-  </style> 
+  <style>
+    #error-message {
+      display: none;
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
 
-   
-  <form> 
-    <label for="binary-input">Introduce un número binario:</label> 
-    <input type="text" id="binary-input" maxlength="8"> 
-    <button type="submit">Enviar</button> 
-  </form> 
-   
+
+  <form>
+    <label for="binary-input">Introduce un número binario:</label>
+    <input type="text" id="binary-input" maxlength="8">
+    <button type="submit">Enviar</button>
+  </form>
+
   <div id="error-message">Introduce sólo números binarios (0 ó 1).</div>
-  
+
 
   <script>
-    $(document).ready(function () {
-      $("#binary-input").on("keypress", function(e){
-        if(e.key == "0" || e.key == "1"){
-          console.log(e.key);
-        }else {
-          console.log(e.key);
-          e.preventDefault();
-          $("#error-message").slideDown().delay(1000).slideUp();
+    (document).ready(function () {
+      $("#formulario-registro").on("submit", function (event) {
+        event.preventDefault();
 
-        }
-      })
+        var nombre = $("#nombre").val();
+        var apellidos = $("#apellidos").val();
+        var fechaNacimiento = $("#fecha-nacimiento").val();
+        var sexo = $("input[name='sexo']:checked").val();
+
+        $.ajax({
+          url: "registro.php",
+          type: "GET",
+          data: {
+            nombre: nombre,
+            apellidos: apellidos,
+            fechaNacimiento: fechaNacimiento,
+            sexo: sexo
+          },
+          success: function (data) {
+            var respuesta = JSON.parse(data);
+            if (respuesta.error == 0) {
+              $("#mensaje-registro").html("Registro completado");
+            } else {
+              $("#mensaje-registro").html("Error " + respuesta.error + ": " +
+                respuesta.error_msg);
+            }
+          }
+        });
+      });
     });
   </script>
 </body>

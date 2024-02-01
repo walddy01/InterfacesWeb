@@ -7,8 +7,34 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <input type="button" id="boton" value="Cargar HTML externo"> 
-  <div id="cargaexterna">Aquí se cargará el HTML externo</div> 
+  <form id="formulario-registro"> 
+    <div> 
+      <label for="nombre">Nombre:</label> 
+      <input type="text" id="nombre" name="nombre"> 
+    </div> 
+   
+    <div> 
+      <label for="apellidos">Apellidos:</label> 
+      <input type="text" id="apellidos" name="apellidos"> 
+    </div> 
+   
+    <div> 
+      <label for="fecha-nacimiento">Fecha de nacimiento:</label> 
+      <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"> 
+    </div> 
+   
+    <div> 
+      <label for="sexo">Sexo:</label> 
+      <input type="radio" id="sexo-hombre" name="sexo" value="hombre"> 
+      <label for="sexo-hombre">Hombre</label> 
+      <input type="radio" id="sexo-mujer" name="sexo" value="mujer"> 
+      <label for="sexo-mujer">Mujer</label> 
+    </div> 
+    <input type="submit" value="Registrarse"> 
+   
+  </form> 
+  <div id="mensaje-registro"></div> 
+  
    
   <script> 
     $(document).ready(function () { 
