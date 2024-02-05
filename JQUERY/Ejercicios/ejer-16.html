@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 13</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <style>
+    header {
+      background-color: lightblue;
+      height: 100px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr minmax(200px, auto);
+    }
+
+    section {
+      background-color: lightcoral;
+      min-height: 200px;
+    }
+
+    aside {
+      background-color: lightgoldenrodyellow;
+    }
+
+    footer {
+      background-color: lightgreen;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+  <main>
+    <section>section</section>
+    <aside id="res">aside</aside>
+  </main>
+  <footer>footer</footer>
+
+  <script>
+    $(document).ready(function () {
+      $("#res").load("resultados.html");
+
+      setInterval(function () {
+      $("#res").load("resultados.html");
+      console.log("a");
+      }, 1000)
+    }); 
+  </script>
+</body>
+
+</html>

@@ -4,15 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ejercicio 13</title>
+  <title>Ejercicio 17</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <input type="button" value="Actualizar" id="refresh">
-  <div id="respuesta"></div>
+  <h2>Formulario de Entrantes</h2>
+  <form id="form-entrantes">
+    <label for="select-entrantes">Entrantes:</label>
+    <select id="select-entrantes">
+      <option value="none" selected>Selecciona entrante</option>
+      <option value="patatas">Patatas Fritas</option>
+      <option value="nuggets">Nuggets de Pollo</option>
+    </select><br><br>
+
+    <div id="salsas" style="display: none; padding: 0.5em; border: 1px solid #333"></div><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+  <br>
+  <div id="error" style="color: red;"></div>
+  <div id="resultado" style="color: green;"></div>
 
   <script>
     $(document).ready(function () {
@@ -22,10 +36,10 @@
           type: "GET",
           success: function (data) {
             var listaMarcas = "<ol>";
-            $.each(data, function(i, d){
+            $.each(data, function (i, d) {
               listaMarcas += "<li>" + d.marca;
               listaMarcas += "<ol>";
-              $.each(d.coches, function(i, d){
+              $.each(d.coches, function (i, d) {
                 listaMarcas += "<li>" + d.modelo + ", " + d.color + ", " + d.precio + "</li>";
               })
               listaMarcas += "</ol>";
