@@ -45,12 +45,15 @@
 
   <script>
     $(document).ready(function () {
-      $("#res").load("resultados.html");
+      // $("#res").load("resultados.html");
 
       setInterval(function () {
-      $("#res").load("resultados.html");
-      console.log("a");
-      }, 1000)
+      $("#res").load("resultado.html", function (response, status, xhr) {
+        if (status == "error"){
+          $("#res").html("Error al cargar resultados");
+        }
+      }).fadeOut(1000).fadeIn(1000);
+      }, 5000)
     }); 
   </script>
 </body>

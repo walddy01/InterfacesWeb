@@ -30,26 +30,49 @@
 
   <script>
     $(document).ready(function () {
-      $("#refresh").on("click", function () {
-        $.ajax({
-          url: "jquery-ej-13-coches.json",
-          type: "GET",
-          success: function (data) {
-            var listaMarcas = "<ol>";
-            $.each(data, function (i, d) {
-              listaMarcas += "<li>" + d.marca;
-              listaMarcas += "<ol>";
-              $.each(d.coches, function (i, d) {
-                listaMarcas += "<li>" + d.modelo + ", " + d.color + ", " + d.precio + "</li>";
-              })
-              listaMarcas += "</ol>";
-              listaMarcas += "</li>"
-            })
-            listaMarcas += "</ol>";
-            $("#respuesta").append(listaMarcas);
+
+      // Al cambiar selección
+      $("#select-entrantes").on("change", function(){
+        if($("#select-entrantes").val() == "none"){
+          $("#salsas").hide();
+          $("#error").text("");
+          $("#resultado").text("");
+        } else {
+          cargar();
+        }
+      })
+      
+      // Submit
+      $("#form-entrantes").on("submit", function(e){
+        e.preventDefault();
+        if($("#select-entrantes").val() == "none"){
+          $("#error").text("Debes seleccionar un entrante.");
+        } else {
+          salsas();
+        }
+      })
+      
+      function cargar(){
+        $("#error").text("");
+        $("#resultado").text("");
+        $("#salsas").hide();
+        if($("#select-entrantes").val() == "patatas"){
+          $("#salsas").load("patatas.html").slideDown(500);
+        } else if($("#select-entrantes").val() == "nuggets") {
+          $("#salsas").load("nuggets.html").slideDown(500);
+        }
+      }
+
+      function salsas(){
+        if($("input[name='salsa']:checked").val() == undefined){
+            $("#resultado").text("");
+            $("#error").text("Debes seleccionar una salsa.");
+          } else {
+            $("#error").text("");
+            $("#resultado").text("Has seleccionado " + $("input[name='salsa']:checked").val());  
           }
-        });
-      });
+      }
+
     }); 
   </script>
 </body>
