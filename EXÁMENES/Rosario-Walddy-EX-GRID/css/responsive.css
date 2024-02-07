@@ -1,0 +1,112 @@
+/* Mobile */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+main>div:nth-child(1) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 4;
+}
+main>div:nth-child(2) {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 4;
+}
+main>div:nth-child(3) {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+main>div:nth-child(4) {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 3;
+}
+main>div:nth-child(5) {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 4;
+}
+main>div:nth-child(6) {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 4;
+    align-self: center;
+    justify-self: center;
+}
+
+/* 600px - 899px */
+@media only screen and (min-width: 600px) and (max-width: 899px){
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main>div:nth-child(1) {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 4;
+    }
+    main>div:nth-child(2) {
+        grid-column: 1 / span 1;
+        justify-self: start;
+    }
+    main>div:nth-child(3) {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 2;
+        justify-self: end;
+        align-self: center;
+    }
+    main>div:nth-child(4) {
+        display: grid;
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 2;
+        align-content: center;
+    }
+    main>div:nth-child(5) {
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 2;
+    }
+    main>div:nth-child(6) {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }
+}
+
+/* 900px */
+@media only screen and (min-width: 900px) {
+    main {
+        grid-template-columns: min-content 1fr auto;
+    }
+
+    main>div:nth-child(1) {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    main>div:nth-child(2) {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+        align-self: center;
+        justify-self: end;
+    }
+    main>div:nth-child(3) {
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 1;
+        align-self: center;
+    }
+    main>div:nth-child(4) {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    main>div:nth-child(5) {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+        align-self: center;
+    }
+    main>div:nth-child(6) {
+        display: grid;
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+        justify-self: auto;
+        align-self: auto;
+        /* text-align: end; */
+        justify-content: end;
+        align-content: end;
+    }
+}
