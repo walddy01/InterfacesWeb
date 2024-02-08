@@ -20,7 +20,8 @@
       <option value="nuggets">Nuggets de Pollo</option>
     </select><br><br>
 
-    <div id="salsas" style="display: none; padding: 0.5em; border: 1px solid #333"></div><br>
+    <div id="salsas" style="display: none; padding: 0.5em; border: 1px solid #333">
+    </div><br>
 
     <button type="submit">Enviar</button>
   </form>
@@ -35,8 +36,8 @@
       $("#select-entrantes").on("change", function(){
         if($("#select-entrantes").val() == "none"){
           $("#salsas").hide();
-          $("#error").text("");
-          $("#resultado").text("");
+          $("#error").empty("");
+          $("#resultado").empty("");
         } else {
           cargar();
         }
@@ -53,8 +54,8 @@
       })
       
       function cargar(){
-        $("#error").text("");
-        $("#resultado").text("");
+        $("#error").empty("");
+        $("#resultado").empty("");
         $("#salsas").hide();
         if($("#select-entrantes").val() == "patatas"){
           $("#salsas").load("patatas.html").slideDown(500);
@@ -65,13 +66,28 @@
 
       function salsas(){
         if($("input[name='salsa']:checked").val() == undefined){
-            $("#resultado").text("");
+            $("#resultado").empty("");
             $("#error").text("Debes seleccionar una salsa.");
-          } else {
-            $("#error").text("");
-            $("#resultado").text("Has seleccionado " + $("input[name='salsa']:checked").val());  
+          } else if ($("input[name='salsa']:checked").val() == "barbacoa") {
+            console.log($("#salsas :nth-child(1) :nth-child(1)"));
+            $("#salsas :nth-child(1)").append("<span>✓</span>");
+            $("#error").empty("");
+            $("#resultado").html("Entrante seleccionado: " + $("#select-entrantes").val() + "<br>" + "Salsa seleccionada: " + $("input[name='salsa']:checked").val());  
           }
       }
+
+      $($("#salsas")).on("change", "input[name='salsa']", function () {
+        console.log("probando");
+        if ($("input[name='salsa']:checked").val() == "ketchup") {
+            $("#salsas :nth-child(1)").append("<span>✓</span>");
+          } else if ($("input[name='salsa']:checked").val() == "alioli") {
+            $("#salsas :nth-child(2)").append("<span>✓</span>");
+          } else if ($("input[name='salsa']:checked").val() == "barbacoa") {
+            $("#salsas :nth-child(1)").append("<span>✓</span>");
+          } else if ($("input[name='salsa']:checked").val() == "mayonesa") {
+            $("#salsas :nth-child(2)").append("<span>✓</span>");
+          }
+      })
 
     }); 
   </script>
