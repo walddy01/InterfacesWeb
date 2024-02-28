@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023-03-06. jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <input type="button" id="btn-carga" value="Cargar formulario">
+  <div id="formulario-container"></div>
+
+  <script>
+    $(document).ready(function () {
+      const $cargar = $("#btn-carga");
+      const $cajaForm = $("#formulario-container");
+
+      $($cargar).on("click", function() {
+        $cajaForm.hide();
+        $.ajax({
+          type: "GET",
+          url: "formulario.html",
+          success: function (response) {
+            $cajaForm.css({border: "2px solid black", padding: "1rem"});
+            $cajaForm.html(response).slideDown();
+          }
+        });
+      });
+
+      $($cajaForm).on("focusin", "#form-login input[type=password]", function(){
+        console.log("hola");
+        $(this).css("background-color", "lightgreen");
+      })
+
+      var error = false;
+      $($cajaForm).on("focusout", "#form-login input[type=password]", function(){
+        console.log("adios");
+        console.log($(this).val().length);
+        
+        $("#error").hide();
+        if($(this).val().length<8){
+            $(this).after("<span id='error'> Mínimo 8 caracteres</span>");
+            $("span#error").css("color", "red");
+        }else {
+            $("#form-login #error").remove();
+            console.log("buenas");
+          }
+        $(this).css("background-color", "red");
+      })
+
+
+    });
+  </script>
+
+</body>
+
+</html>
