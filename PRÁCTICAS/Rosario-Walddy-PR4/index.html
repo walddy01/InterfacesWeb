@@ -52,43 +52,14 @@
     </div>
 
     <script>
-        // $(document).ready(function () {
-        //     var toast = $('#liveToast');
-        //     var ya = false;
-        //         setInterval(function () {
-        //             if (ya == false) {
-        //                 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast);
-        //                 toastBootstrap.show();
-        //                 ya = true;
-        //             }
-        //         }, 3000)
-        //     }); 
+      $(document).ready(function () {
+        var toast = $('#liveToast');
 
-            // $(document).ready(function () {
-            // const toast = bootstrap.Toast.getOrCreateInstance($('#liveToast'));
-            // setInterval(function () {
-            //         toast.show();
-            //     }, 3000)
-            // });
+        setTimeout(function () {
+          toast.toast('show');
+        }, 3000);
 
-            // $(document).ready(function () {
-            // var toast = $('#liveToast');
-            //     setInterval(function () {
-            //         toast.show();
-            //     }, 3000)
-            // });
-
-              $(document).ready(function () {
-                var toast = $('#liveToast');
-
-                setTimeout(function () {
-                  toast.toast('show');
-                }, 3000);
-
-              });
-
-
-
+      });
     </script>
 </body>
 </html>
