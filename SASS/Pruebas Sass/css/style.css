@@ -1,0 +1,9 @@
+header {
+  background-color: red;
+}
+header h1 {
+  color: blue;
+}
+header:hover {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

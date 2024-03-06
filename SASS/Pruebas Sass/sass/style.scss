@@ -1,0 +1,14 @@
+$color-primary: red;
+$color-secondary: blue;
+
+header {
+    background-color: $color-primary;
+
+    h1 {
+        color: $color-secondary;
+    }
+
+    &:hover {
+        color: blue;
+    }
+}
