@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 4 - Bootstrap &amp; jQuery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+          class="d-inline-block align-text-top">
+          <span class="ms-1">P4-DIW</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Lorem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ipsum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Dolor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registro</a>
+            </li>
+          </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="row align-items-center">
+      <div class="col-lg-8 p-4 text-center text-lg-start">
+        
+          <h1 class="display-2">Lorem ipsum dolor amet consectetur</h1>
+          <p class="text-secondary">
+            Lorem Ipsum dolor sit, amet consectetur adispisicing elit. 
+            Sequi possimus laudantium tempora! Optio iste eligendi non?
+          </p>
+  
+          
+          <a href="https://www.apple.com/es/app-store/" class="">
+            <img src="img/app-store-badge.png" class="card-img-bottom w-25" alt="">
+          </a>
+          
+          <a href="https://play.google.com/store/games" class="me-1">
+            <img src="img/google-play-badge.png" class="img-fluid w-25" alt="">
+          </a>
+      </div>
+
+      <div class="col-lg-4 p-4 d-none d-lg-block">
+        <img src="img/mobile-main.jpg" alt="">
+      </div>
+    </header>
+
+    <main>
+        
+    </main>
+      
+
+    <!-- TOAST -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="toast-header bg-secondary-subtle">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>Ahora</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-bg-dark ">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+    </div>
+    
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+    <script src="js/script.js"></script>
+  </body>
+  </html>
