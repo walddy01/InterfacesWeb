@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log("hola");
     var toast = $("#liveToast");
 
     setTimeout(function () {

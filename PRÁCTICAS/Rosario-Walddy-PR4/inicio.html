@@ -1,92 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 4 - Bootstrap &amp; jQuery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  </head>
-  <body>
-    
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 4 - Bootstrap &amp; jQuery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/bootstrap-logo-shadow.png" alt="Logo" width="30" height="24"
           class="d-inline-block align-text-top">
-          <span class="ms-1">P4-DIW</span>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Lorem</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ipsum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Dolor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registro.html">Registro</a>
-            </li>
-          </ul>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="ms-1">P4-DIW</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Lorem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ipsum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dolor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registro</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
 
+  <div class="container">
     <!-- HEADER -->
-    <header class="row align-items-center">
-      <div class="col-lg-8 p-4 text-center text-lg-start">
-        
-          <h1 class="display-2">Lorem ipsum dolor amet consectetur</h1>
-          <p class="text-secondary">
-            Lorem Ipsum dolor sit, amet consectetur adispisicing elit. 
-            Sequi possimus laudantium tempora! Optio iste eligendi non?
-          </p>
-  
-          
-          <a href="https://www.apple.com/es/app-store/" class="">
-            <img src="img/app-store-badge.png" class="card-img-bottom w-25" alt="">
-          </a>
-          
-          <a href="https://play.google.com/store/games" class="me-1">
-            <img src="img/google-play-badge.png" class="img-fluid w-25" alt="">
-          </a>
+    <header class="row align-items-center py-5">
+      <div class="col-lg-8 text-center text-lg-start">
+
+        <h1 class="display-2">Lorem ipsum dolor amet consectetur</h1>
+        <p class="fs-5 text-secondary">
+          Lorem Ipsum dolor sit, amet consectetur adispisicing elit.
+          Sequi possimus laudantium tempora! Optio iste eligendi non?
+        </p>
+
+        <div class="row justify-content-center justify-content-lg-start">
+          <div class="col-6 col-sm-4">
+            <a href="">
+              <img src="img/google-play-badge.png" class="img-fluid" alt="">
+            </a>
+          </div>
+          <div class="col-6 col-sm-4">
+            <a href="">
+              <img src="img/app-store-badge.png" class="img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+
       </div>
 
-      <div class="col-lg-4 p-4 d-none d-lg-block">
+      <div class="col-lg-4 p-4 d-none d-lg-block text-center">
         <img src="img/mobile-main.jpg" alt="">
       </div>
+
     </header>
 
-    <main>
-        
-    </main>
-      
+    <!-- MAIN -->
+    <main class="row pt-5">
 
-    <!-- TOAST -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-        <div class="toast-header bg-secondary-subtle">
-          <strong class="me-auto">Bootstrap</strong>
-          <small>Ahora</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body text-bg-dark ">
-          Hello, world! This is a toast message.
+      <!-- CARDS -->
+      <div class="col-lg-3 col-sm-6 mb-3">
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=1" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
+
+      <div class="col-lg-3 col-sm-6 mb-3">
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=2" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-3">
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=3" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-3">
+        <div class="card">
+          <img src="https://picsum.photos/400/200?random=4" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCORDION -->
+      <div class="col-12 pt-5">
+
+        <div class="row text-bg-primary align-items-center py-3">
+
+          <div class="col-12 text-center p-4">
+            <h2>Lorem ipsum dolor sit amet</h2>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img src="img/mobile-ilustration.png" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus enim nostrum aut adipisci
+                    perferendis officia
+                    suscipit. Dignissimos voluptatum enim beatae quasi! Nemo consectetur quaerat sunt ea provident quas,
+                    possimus
+                    repudiandae inventore neque rerum reiciendis ducimus ex suscipit aperiam ut voluptatibus!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus enim nostrum aut adipisci
+                    perferendis officia
+                    suscipit. Dignissimos voluptatum enim beatae quasi! Nemo consectetur quaerat sunt ea provident quas,
+                    possimus
+                    repudiandae inventore neque rerum reiciendis ducimus ex suscipit aperiam ut voluptatibus!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus enim nostrum aut adipisci
+                    perferendis officia
+                    suscipit. Dignissimos voluptatum enim beatae quasi! Nemo consectetur quaerat sunt ea provident quas,
+                    possimus
+                    repudiandae inventore neque rerum reiciendis ducimus ex suscipit aperiam ut voluptatibus!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Accordion Item #4
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus enim nostrum aut adipisci
+                    perferendis officia
+                    suscipit. Dignissimos voluptatum enim beatae quasi! Nemo consectetur quaerat sunt ea provident quas,
+                    possimus
+                    repudiandae inventore neque rerum reiciendis ducimus ex suscipit aperiam ut voluptatibus!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-bg-dark mt-5">
+    <div class="row">
+      <div class="col-12 col-sm-4 d-flex d-sm-block justify-content-between p-5">
+        <a class="nav-link fs-4 d-none d-sm-block" href="#">Lorem ipsum</a>
+        <a class="nav-link text-secondary" href="#">Lorem</a>
+        <a class="nav-link text-secondary" href="#">Ipsum</a>
+        <a class="nav-link text-secondary" href="#">Dolor</a>
+        <a href="/PRÁCTICAS/Rosario-Walddy-PR4/registro.html" class="nav-link text-secondary">Registro</a>
+      </div>
+
+      <div class="col-12 col-sm-8 order-sm-first p-5">
+        <h4>Powered by Walddy Antonio Rosario Bonifacio</h4>
+      </div>
     </div>
-    
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
-    <script src="js/script.js"></script>
-  </body>
-  </html>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header bg-secondary-subtle">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>Ahora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body text-bg-dark ">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+
+</html>
